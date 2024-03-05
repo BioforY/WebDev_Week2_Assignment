@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Image Links</title>
+     <style>
+        /*Style for grid container*/
+        #gallery {
+            display: grid; 
+        }
+        /*Style for individual grid items*/
+        #gallery img {
+            width: 300px;
+            height: 300px;
+            border-radius: 5px;
+        }
+     </style>
+    </head>
+    <body style="margin: 0; display: flex;">
+        <ul style="list-style-type: none; margin: 0; padding: 0; width: 25%; background-color: gray; height: 100vh; overflow: auto;" >
+            <li><a href="#home" style="display: block; padding: 30px; text-decoration: none;" onclick="document.getElementById('home').style.display = 'block' ; document.getElementById('gallery').style.display = 'none'; document.getElementById('menu').style.display = 'none';">Home</a></li>
+            <li><a href="#gallery" style="display: block; padding: 30px; text-decoration: none;" onclick="document.getElementById('home').style.display = 'none' ; document.getElementById('gallery').style.display = 'block' ; document.getElementById('menu').style.display = 'none';">Gallery</a></li>
+            <li><a href="#menu" style="display: block; padding: 30px; text-decoration: none;" onclick="document.getElementById('home').style.display = 'none' ; document.getElementById('gallery').style.display = 'none' ; document.getElementById('menu').style.display = 'block';">Menu</a></li>
+        </ul>
+    </body>
+    <!--Content sections-->
+    <div class="content" style="flex-grow: 1; padding: 20px;">
+        <div id="home" style="display: none;">
+            <h2>HOME</h2>
+            <h3>Welcome to our home page</h3>
+            <p>This is where you can find all things tech. Let's delve deeper into the world of technology right here!</p>
+            <a href="https://unsplash.com/photos/man-wearing-sony-playstation-vr-MxVkWPiJALs"> 
+                <img src="https://unsplash.com/photos/MxVkWPiJALs/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTZ8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNzA5NjM5MDMzfDA&force=true" alt="man wearing Sony PlayStation VR" width="300" height="300"></a>
+    </div>
+    <div id="gallery" style="display: none;">
+    <h2>GALLERY</h2>
+<p>Nature is all around us.Sometimes, you just have to look.</p>
+<a href="https://unsplash.com/photos/a-small-bird-in-a-bush-8Mok12ZxYac">
+    <img src="https://unsplash.com/photos/8Mok12ZxYac/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTJ8fG5hdHVyZSUyMGluJTIwZGlzZ3Vpc2V8ZW58MHx8fHwxNzA5NjQwNjg3fDA&force=true" alt="a small bird hidden in a bush" width="300" height="300"></a>
+<a href="https://unsplash.com/photos/green-and-black-bird-on-tree-branch-during-daytime-h9YTjTJzP6Q">
+    <img src="https://unsplash.com/photos/h9YTjTJzP6Q/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8MTZ8fG5hdHVyZSUyMGluJTIwZGlzZ3Vpc2V8ZW58MHx8fHwxNzA5NjQwNjg3fDA&force=true" alt="chameleon camouflaged in a tree" width="300" height="300"></a>
+<a href="https://unsplash.com/photos/ocean-wave-at-beach-GyDktTa0Nmw">
+    <img src="https://unsplash.com/photos/GyDktTa0Nmw/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NTB8fG5hdHVyZSUyMGluJTIwZGlzZ3Vpc2V8ZW58MHx8fHwxNzA5NjQxMjY0fDA&force=true" alt="close-up waves in the sea" width="300" height="300"></a>
+</div>
+<div id="menu" style="display: none;">
+<h2>MENU</h2>
+<p>Food...are you hungry? Sure about that?</p>
+<p>Have a look at our menu then ask yourself again.</p>
+<ol>
+    <li><a href="https://unsplash.com/photos/toast-bread-with-blueberry-on-black-plate-zcUgjyqEwe8">Toast bread with blueberry topping.</a></li>
+    <li><a href="https://unsplash.com/photos/bowl-of-vegetable-salads-IGfIGP5ONV0">Salad Plate.</a></li>
+    <li><a href="https://unsplash.com/photos/chicken-burger-on-tray-pLKgCsBOiw4">Chicken Burger.</a></li>
+</ol>
+<p>Ready to order?</p>
+</div>
+
+    </html>
